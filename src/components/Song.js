@@ -2,7 +2,7 @@ import React from "react";
 
 const Song = () => {
   return (
-    <div>
+    <div className="song-container">
       <h1>picture</h1>
       <h1>Song name</h1>
       <h1>Artics</h1>
