@@ -8,9 +8,16 @@
     width: 50%;
     display: flex;
 
+    p {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+
     input {
       width: 100%;
-      padding: 1rem;
+      padding: 1rem 0;
+      cursor: pointer;
     }
 
     & > * {
