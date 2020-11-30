@@ -12,15 +12,12 @@ const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
   const audioRef = useRef(null);
 
   const [songInfo, setSongInfo] = useState({
-    currentTime: null,
-    duration: null,
+    currentTime: 0,
+    duration: 0,
   });
 
   //Event Handlers
   const playSongHandler = () => {
-    console.log(audioRef.current.duration);
-    console.log(audioRef.current.currentTime);
-
     if (isPlaying) {
       setIsPlaying(!isPlaying);
       audioRef.current.pause();

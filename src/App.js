@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 import "./styles/app.scss";
+import data from "./data";
 
 import Song from "./components/Song";
 import Player from "./components/Player";
-
-import data from "./data";
+import Library from "./components/Library";
 
 function App() {
   const [songs, setSongs] = useState(data());
@@ -14,12 +14,13 @@ function App() {
 
   return (
     <div className="App">
-      <Song currentSong={currentSong} />
+      <Song isPlaying={isPlaying} currentSong={currentSong} />
       <Player
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
         currentSong={currentSong}
       />
+      <Library songs={songs} />
     </div>
   );
 }
