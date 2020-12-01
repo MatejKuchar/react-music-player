@@ -6,8 +6,10 @@ const LibrarySong = ({ song }) => {
   return (
     <div className="library-song">
       <img src={cover} alt={`${name} - ${artist}`} />
-      <h3>{name}</h3>
-      <h4>{artist}</h4>
+      <div className="song-info">
+        <h3>{name}</h3>
+        <h4>{artist}</h4>
+      </div>
     </div>
   );
 };

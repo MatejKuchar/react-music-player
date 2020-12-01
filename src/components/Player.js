@@ -58,7 +58,7 @@ const Player = ({ currentSong, isPlaying, setIsPlaying }) => {
           value={songInfo.currentTime}
           type="range"
         />
-        <p>{getTime(songInfo.duration)}</p>
+        <p>{getTime(songInfo.duration - songInfo.currentTime)}</p>
       </div>
       <div className="play-control">
         <FontAwesomeIcon
